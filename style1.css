@@ -1,0 +1,543 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2b1055), to(#7597de));
+  background: linear-gradient(#2b1055, #7597de);
+}
+
+body .nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100000;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+body .nav .logo {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+body .nav label {
+  margin: 0 0 0 70px;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+  color: #fff;
+}
+
+body .nav #toggle {
+  display: none;
+}
+
+body .nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .nav .menu li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+body .nav .menu li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 20px;
+}
+
+body .nav .menu li a:hover,
+body .nav .menu li a.active {
+  background: #fff;
+  color: #2b1055;
+}
+
+body .nav .mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+body .nav .mobile li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+body .nav .mobile li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 20px;
+}
+
+body .nav .mobile li a:hover,
+body .nav .mobile li a.active {
+  background: #fff;
+  color: #2b1055;
+}
+
+body section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section section::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+body section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+
+body section #moon {
+  mix-blend-mode: screen;
+}
+
+body section #mountains_front {
+  z-index: 10;
+}
+
+body section #text {
+  position: absolute;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  white-space: nowrap;
+  font-size: 7vw;
+  z-index: 9;
+  background: url("./back.png");
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  -webkit-animation: back 20s linear infinite;
+          animation: back 20s linear infinite;
+}
+
+@-webkit-keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+body section .btn {
+  text-decoration: none;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background-color: #fff;
+  color: #2b1055;
+  font-size: 1.5em;
+  z-index: 9;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+
+body .sec {
+  position: relative;
+  padding: 100px;
+  background-image: linear-gradient(178deg, #1f0225, #7597de);
+}
+
+body .sec h1 {
+  margin-bottom: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+body .sec h3 {
+  color: #fff;
+  text-align: center;
+}
+
+body .sec h3 button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+body .section {
+  width: 100%;
+  height: 70vh;
+  color: #fff;
+  background-image: linear-gradient(178deg, #7597de, #1f0225);
+}
+
+body .section h1 {
+  padding-top: 60px;
+}
+
+body .card {
+  background-color: transparent;
+  border: transparent;
+}
+
+body h1 {
+  color: #fff;
+  text-align: center;
+}
+
+body #rows {
+  padding-top: 70px;
+  padding-left: 70px;
+  padding-right: 50px;
+  height: 70vh;
+  color: #fff;
+  background-image: linear-gradient(178deg, #1f0225, #7597de);
+}
+
+body #rows h2 {
+  color: #fff;
+}
+
+body .footer {
+  text-align: center;
+  padding: 7px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 990px) {
+  body .nav label {
+    display: block;
+    cursor: pointer;
+  }
+  body .nav .menu {
+    display: none;
+  }
+  body .nav .mobile {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2b1055;
+    top: 90px;
+    left: -200%;
+    text-align: center;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  body .nav .mobile li {
+    padding-top: 100px;
+  }
+  body .nav .mobile li a {
+    font-size: 25px;
+  }
+  body .nav .mobile li a a:hover, body .nav .mobile li a a.active {
+    background: none;
+    color: #7597de;
+  }
+  body .nav #toggle:checked ~ .mobile {
+    display: block;
+    left: 0;
+  }
+  body .skills .max-width {
+    padding: 0 50px;
+  }
+  body .skills .skills-content .column {
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 800px) {
+  body .skills {
+    height: 100vh;
+  }
+  body .skills .skills-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .skills .skills-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  body .skills .skills-content .left {
+    height: 50px;
+  }
+  body .skills .skills-content .left .text p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  body .d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .section {
+    height: 1000px;
+    color: #fff;
+  }
+}
+
+@media (max-width: 406px) {
+  body .d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .section {
+    height: 1700px;
+    color: #fff;
+  }
+  body #rows {
+    height: 900px;
+  }
+}
+
+body .skills {
+  background-image: linear-gradient(359deg, #250530, #7597de);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 100px 0;
+}
+
+body .skills .max-width {
+  margin: 50px;
+}
+
+body .skills .skills-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .skills .skills-content .column {
+  width: calc(50% - 30px);
+}
+
+body .skills .skills-content .left .text {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+body .skills .skills-content .left p {
+  text-align: justify;
+}
+
+body .skills .skills-content .left a {
+  display: inline-block;
+  background: #fff;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 40px;
+  border: 2px solid #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body .skills .skills-content .left a:hover {
+  color: #fff;
+  background: none;
+}
+
+body .skills .skills-content .right .bars {
+  margin-bottom: 15px;
+}
+
+body .skills .skills-content .right .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .skills .skills-content .right span {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+body .skills .skills-content .right .line {
+  height: 5px;
+  width: 100%;
+  background: #fff;
+  position: relative;
+}
+
+body .skills .skills-content .right .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: crimson;
+}
+
+body .skills .skills-content .right .html::before {
+  width: 50%;
+}
+
+body .skills .skills-content .right .css::before {
+  width: 40%;
+}
+
+body .skills .skills-content .right .js::before {
+  width: 10%;
+}
+
+body .skills .skills-content .right .php::before {
+  width: 1%;
+}
+
+body .skills .skills-content .right .react::before {
+  width: 1%;
+}
+
+body .contact {
+  background-image: linear-gradient(178deg, #250530, #7597de);
+  color: #fff;
+}
+
+body .contact .max-width {
+  width: 100%;
+  height: 100vh;
+}
+
+body .contact .contact-content .column {
+  width: calc(50% - 30px);
+}
+
+body .contact .contact-content .column .text {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+body .contact .contact-content .column .fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .contact .contact-content .column .fields .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+body .contact .contact-content .column .button-area {
+  color: #fff;
+  display: block;
+  width: 160px !important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background: #fff;
+  border: 2px solid #7597de;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body footer {
+  background: #862b3a;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+}
+/*# sourceMappingURL=style1.css.map */
